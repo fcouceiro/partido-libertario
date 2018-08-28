@@ -63,6 +63,7 @@ section {
 }
 
 .btn-primary {
+  color: black;
   background-color: $primary;
   border-color: $primary;
   &:active,
@@ -95,4 +96,17 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+.text-declaration{
+  text-align: justify;
+}
+
+.icon-clickable{
+  cursor: pointer;
+  color: black;
+
+  :hover{
+    color: white;
+  }
 }
