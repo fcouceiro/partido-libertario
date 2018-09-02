@@ -19,6 +19,16 @@ a {
   color: $primary !important;
 }
 
+.circle-white {
+  color: white;
+}
+.social-icon {
+  color: black;
+}
+.social-icon:hover {
+  color: darken($primary, 10%) !important;
+}
+
 h1,
 h2,
 h3,
@@ -49,17 +59,16 @@ section {
   section {
     padding: 150px 0;
   }
+  .btn-xl {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
 }
 
 // Button Styles
 .btn {
   @include heading-font;
   font-weight: 700;
-}
-
-.btn-xl {
-  font-size: 18px;
-  padding: 20px 40px;
 }
 
 .btn-primary {
@@ -77,6 +86,11 @@ section {
   &:focus {
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
   }
+}
+
+.btn-transparent{
+  background-color: #ffcf37a6;
+  margin-bottom: 10px;
 }
 
 // Highlight color customization

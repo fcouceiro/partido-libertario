@@ -2,48 +2,95 @@
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url('../img/header-bg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-  .intro-text {
-    padding-top: 150px;
-    padding-bottom: 100px;
-    .intro-lead-in {
-      font-size: 20px;
-      font-style: italic;
-      line-height: 22px;
-      margin-bottom: 25px;
-      @include serif-font;
-    }
-    .intro-heading {
-      font-size: 30px;
-      font-weight: 700;
-      line-height: 50px;
-      margin-bottom: 25px;
-      @include heading-font;
-    }
-  }
-}
-@media(min-width:768px) {
-  header.masthead {
+  position: relative;
+  margin-top: 84px;
+  .intro{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
     .intro-text {
-      padding-top: 300px;
-      padding-bottom: 200px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
       .intro-lead-in {
-        font-size: 30px;
+        font-size: 20px;
         font-style: italic;
-        line-height: 40px;
+        line-height: 22px;
         margin-bottom: 25px;
         @include serif-font;
       }
       .intro-heading {
-        font-size: 70px;
+        font-size: 30px;
         font-weight: 700;
-        line-height: 75px;
-        margin-bottom: 50px;
+        line-height: 50px;
+        margin-bottom: 25px;
         @include heading-font;
+      }
+
+      .row{
+        a {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .video{
+    max-height: 550px;
+    overflow: hidden;
+  }
+}
+@media(max-width:550px) {
+  header.masthead {
+    .intro{
+      .intro-text {
+        .intro-lead-in {
+          font-size: 15px;
+          font-style: italic;
+          line-height: unset;
+          margin-bottom: unset;
+          @include serif-font;
+        }
+        .intro-heading {
+          font-size: 25px;
+          font-weight: 700;
+          line-height: unset;
+          margin-bottom: unset;
+          @include heading-font;
+        }
+      }
+    }
+  }
+}
+@media(max-width:420px) {
+  header.masthead {
+    margin-top: 134px;
+  }
+}
+@media(min-width:800px) {
+  header.masthead {
+    .intro{
+      .intro-text {
+        .intro-lead-in {
+          font-size: 30px;
+          font-style: italic;
+          line-height: 40px;
+          margin-bottom: 25px;
+          @include serif-font;
+        }
+        .intro-heading {
+          font-size: 70px;
+          font-weight: 700;
+          line-height: 75px;
+          margin-bottom: 50px;
+          @include heading-font;
+        }
       }
     }
   }
