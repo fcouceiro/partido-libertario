@@ -138,6 +138,15 @@ img::-moz-selection {
   color: white;
 }
 
+.no-style-anchor {
+  color: white;
+}
+
+.no-style-anchor:hover {
+  color: black;
+  text-decoration: none;
+}
+
 #mainNav {
   background-color: #ffcf37;
 }
