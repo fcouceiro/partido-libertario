@@ -28,12 +28,13 @@
     $('.navbar').removeClass('d-none');
   })
 
-  window.addEventListener('load', function () {
+  $(window).on("load", function () {
     var video = document.getElementById('autoplay-video');
+    video.play();
     video.addEventListener('ended', function () {
       this.currentTime = 0;
       this.play();
     }, false);
-  });
+  })
 
 })(jQuery); // End of use strict

@@ -72,7 +72,7 @@
   <!-- Header -->
   <header class="masthead">
     <div class="video">
-      <video id="autoplay-video" width="100%" height="auto" autoplay loop>
+      <video id="autoplay-video" width="100%" height="auto" autoplay loop muted>
         <source src="video/video-hd.mp4" type="video/mp4" /> Your browser does not support the video tag.
       </video>
     </div>
@@ -278,26 +278,17 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/logos/logo_square.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>A 22 de Setembro de 2018</h4>
+                  <h4>Setembro 2018</h4>
                   <h4 class="subheading">2ª Assembleia geral</h4>
                 </div>
                 <div class="timeline-body">
-                  <video width="100%" height="auto" controls>
-                    <source src="video/video-encontro-sd.mp4" type="video/mp4" /> Your browser does not support the video tag.
-                  </video>
                   <p class="text-muted">
-                    Local:
-                    <a href="https://www.google.com/maps/search/?api=1&query=Rua+Alexandre+Herculano+26%2C+Pombal%2C+pt"
-                      target="_blank">
-                      Hotel Pombalense, Rua Alexandre Herculano 26 · Pombal</a>
-                    . A metros da Estação da CP do Pombal
-                    (Inter-cidades e Alfa-Pendular).
-                    <br>
-                    Inscrição (Almoço-convívio e AG): registo no <a href="https://goo.gl/u5regZ" target="_blank">Meetup</a>.
+                    A 22 de Setembro de 2018 em Pombal, reuniu-se a 2ª Assembleia Geral e elegeram-se novos orgãos
+                    sociais.
                   </p>
                 </div>
               </div>
@@ -407,9 +398,13 @@
 
   <!-- Footer -->
   <footer>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="offset-md-8 col-md-4">
+        <div class="col-sm-5 push-right">
+          <img data-toggle="modal" data-target="#modalDonation" src="img/logos/btc-donate.jpg" height="65px" width="auto"
+            style="cursor: pointer">
+        </div>
+        <div class="offset-sm-2 col-sm-5">
           <ul class="list-inline quicklinks">
             <li class="list-inline-item" style="margin-right: 1.5rem">
               <b>Membro de:</b>
@@ -445,43 +440,31 @@
                 <br>
                 <p class="text-muted text-declaration">
                   Pretendendo celebrar a diversidade e identidade de cada pessoa, os seus direitos inalienáveis à Vida,
-                  Liberdade e Propriedade
-                  e à sua legítima defesa, definidores do Homem enquanto ser moral e factor de ordem e prosperidade e,
-                  constatando
-                  a falta da sua defesa clara no espectro político vigente, associamo-nos no Partido Libertário.
+                  Liberdade e Propriedade e à sua legítima defesa, definidores da Pessoa enquanto ser moral e factor de
+                  ordem e prosperidade e, constatando a falta da sua defesa clara no espectro político vigente,
+                  associamo-nos no Partido Libertário com as seguintes Linhas Programáticas:
                   <br>
                   <ol type="I">
                     <li class="text-muted text-declaration">Defendemos que à pessoa, famílias e comunidades unidas
-                      geograficamente
-                      ou por comunhão de princípios, deve ser assegurada a sua esfera privada de consciência e acção
-                      autónoma.</li>
+                      geograficamente ou por comunhão de princípios, deve ser assegurada a sua esfera privada de
+                      consciência e acção autónoma.</li>
                     <li class="text-muted text-declaration">Acreditamos que protegendo a propriedade honestamente
-                      adquirida,
-                      as pessoas podem usufruir plenamente o fruto do seu trabalho e criatividade, estimulando a
-                      cooperação
-                      voluntária sob a forma associativa, iniciativas empresariais e mercados.</li>
+                      adquirida, as pessoas podem usufruir plenamente o fruto do seu trabalho e criatividade
+                      estimulando a cooperação voluntária sob a forma associativa, iniciativas empresariais e mercados.</li>
                     <li class="text-muted text-declaration">Reconhecemos nas freguesias e municípios a capacidade de
-                      assumir
-                      todas as competências dentro do princípio geral da subsidiariedade e cuja participação na ordem
-                      constitucional
-                      nacional se deve poder presumir como voluntária.</li>
+                      assumir todas as competências dentro do princípio geral da subsidiariedade e cuja participação na
+                      ordem constitucional nacional se deve poder presumir como voluntária.</li>
                     <li class="text-muted text-declaration">Pretendemos promover a liberdade de escolha, a livre
-                      concorrência
-                      interna e internacional na procura e oferta de bens e serviços. Aplicamos os mesmos princípios à
-                      moeda
-                      e aos tribunais arbitrais.</li>
-                    <li class="text-muted text-declaration">Identificamos que qualquer regime tende a criar uma maioria
-                      de
-                      receptores directos e indirectos do orçamento geral do estado, pondo nessa medida em risco, e de
-                      forma
-                      progressiva, uma capacidade decisória funcional, isenta de conflitos de interesse e grupos de
-                      pressão
-                      em concorrência maligna.</li>
+                      concorrência interna e internacional na procura e oferta de bens e serviços. Aplicamos os mesmos
+                      princípios à moeda e aos tribunais arbitrais.</li>
+                    <li class="text-muted text-declaration">Identificamos que qualquer regime político tende a criar
+                      uma maioria de receptores directos e indirectos do seu orçamento geral do estado (financiado por
+                      impostos, emissão de dívida e moeda) pondo nessa medida em risco de forma progressiva uma
+                      capacidade decisória funcional sobre o bem comum, capacidade de decisão que se deseja isenta quer
+                      de conflitos de interesse quer de grupos de pressão em concorrência maligna.</li>
                     <li class="text-muted text-declaration">A par da participação aberta na ordem política e económica
-                      europeia
-                      e internacional é necessário, a Portugal, preservar simultaneamente a capacidade última de
-                      prosseguir
-                      os seus próprios interesses e valores como Nação soberana.</li>
+                      europeia e internacional é necessário, a Portugal, preservar simultaneamente a capacidade última
+                      de prosseguir os seus próprios interesses e valores como Nação soberana.</li>
                   </ol>
                 </p>
                 <br>
@@ -741,6 +724,46 @@
                 <p class="item-intro text-muted">Quem defende a privatização de todos os serviços públicos?</p>
                 <img class="img-fluid d-block mx-auto" src="img/why/6.jpg" alt="Quem defende a privatização de todos os serviços públicos?"
                   draggable="false" onmousedown="return false" style="user-drag: none">
+
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Donation -->
+  <div class="portfolio-modal modal fade" id="modalDonation" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Doações</h2>
+                <br>
+                Endereço de bitcoins do Partido Libertário para fazer doações:
+                <div>
+                  <br>
+                  <p class="text-muted" style="word-break:break-all">3963DtZoDmV1aaZAwpCgQChduvPZxRE4pQ</p>
+                  <p>ou</p>
+                  <img src="img/logos/btc-address.png" width="250px" height="auto">
+                </div>
+
+                <p>
+                  Consulte com transparência máxima, saldos e
+                  movimentos públicos e em tempo real <a href="https://wavesexplorer.com/address/3PC4XUE5L2RwZpt75dKjP9doEiDqfuaHQZn" target="_blank">aqui</a>.
+                </p>
 
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
